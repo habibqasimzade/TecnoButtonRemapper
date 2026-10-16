@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tecno.remapper">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- 1. Arxa planda sönməməsi üçün batareya icazəsi -->
     <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
-    <!-- 2. Güc düyməsinə basanda arxa plandan Google Pay-i aça bilmək üçün icazə -->
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-    <!-- 3. Düyməyə iki dəfə basanda yüngül titrəmə (təsdiq) verməsi üçün -->
     <uses-permission android:name="android.permission.VIBRATE" />
 
-    <!-- Android 11+ sistemlərdə digər proqramları görə və aça bilmək üçün -->
     <queries>
         <package android:name="com.google.android.apps.walletnfcrel" />
         <package android:name="com.whatsapp" />
